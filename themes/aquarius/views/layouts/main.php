@@ -195,7 +195,7 @@
 							array(
 									'label' => '元数据管理',
 									'url' => array(
-											'/lookup'
+											'/lookup/default/index'
 									),
 									'icon' => 'isw-empty_document',
 									'visible' => (Yii::app()->user->canAccess(8)),

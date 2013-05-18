@@ -141,7 +141,7 @@ class Lookup extends CActiveRecord
 
 		return new CActiveDataProvider('Lookup', array(
 			'criteria'=>$criteria,
-			//'pagination'=>false,
+			'pagination'=>false,
 			'sort'=>array(
 				'defaultOrder'=>'type,position',
 			),

@@ -9,7 +9,7 @@ $modules = require_once($ConfigDir . DIRECTORY_SEPARATOR . 'modules.php');
 $import=require_once($ConfigDir . DIRECTORY_SEPARATOR . 'import.php');
 $db_local=require_once($ConfigDir . DIRECTORY_SEPARATOR . 'db_local.php');
 $db_server=require_once($ConfigDir . DIRECTORY_SEPARATOR . 'db.php');
-$db=!(APP_DEPLOYED)?$db_local:$db_server;
+$db=(APP_DEPLOYED)?$db_local:$db_server;
 return array(
 		'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
 		'name' => 'Traing Manage System',

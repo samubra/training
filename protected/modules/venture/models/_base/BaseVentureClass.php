@@ -30,20 +30,20 @@ abstract class BaseVentureClass extends GxActiveRecord {
 	}
 
 	public static function label($n = 1) {
-		return Yii::t('app', 'VentureClass|VentureClasses', $n);
+		return Yii::t('VentureModule.app', 'VentureClass|VentureClasses', $n);
 	}
 
 	public static function representingColumn() {
 		return 'name';
 	}
-
+	public $starend;
 	public function rules() {
 		return array(
-			array('create_time', 'numerical', 'integerOnly'=>true),
+			array('code,start,end,starend','required'),
 			array('name', 'length', 'max'=>255),
 			array('code, manager', 'length', 'max'=>20),
 			array('phone', 'length', 'max'=>11),
-			array('start, end', 'safe'),
+			array('start, end，starend', 'safe'),
 			array('name, code, phone, manager, start, end, create_time', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('id, name, code, phone, manager, start, end, create_time', 'safe', 'on'=>'search'),
 		);

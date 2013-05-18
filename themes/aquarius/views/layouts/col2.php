@@ -5,17 +5,12 @@
                             <div class="<?php echo $this->blockIcon;?>"></div>
                             <h1><?php echo CHtml::encode($this->blockTitle);?></h1>   
                             <?php if($this->menu){?>
-                            <ul class="buttons">
-                                <li>
-                                    <a href="index.html#" class="isw-settings"></a>
-                                    <?php 
+                                <?php 
                                     $this->widget('Menu', array(
 										'items'=>$this->menu,
-										'htmlOptions'=>array('class'=>'dd-list'),
+										'htmlOptions'=>array('class'=>'buttons'),
 									));
 									?>
-                                </li>
-                            </ul> 
                             <?php }?>                       
                         </div>
                         <div class="block">

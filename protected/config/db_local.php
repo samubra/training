@@ -1,9 +1,9 @@
 <?php
 return array(//LOCALHOST
             'class' => 'CDbConnection',
-            'connectionString' => 'mysql:host=localhost ;dbname=training',
+            'connectionString' => 'mysql:host=localhost;dbname=training',
             'username' => 'root',
-            'password' => '',
+            'password' => '635803',
             'charset' => 'UTF8',
             'tablePrefix' => '', // even empty table prefix required!!!
             'emulatePrepare' => true,

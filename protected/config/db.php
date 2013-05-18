@@ -3,7 +3,7 @@ return array(
             'class' => 'CDbConnection',
             'connectionString' => 'mysql:host=localhost;dbname=training',
             'username' => 'root',
-            'password' => '',
+            'password' => '635803',
             'charset' => 'UTF8',
             'tablePrefix' => '',
             'emulatePrepare' => true,
